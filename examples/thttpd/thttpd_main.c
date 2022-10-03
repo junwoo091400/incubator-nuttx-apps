@@ -121,7 +121,7 @@
 /* TTY device to use */
 
 #  ifndef CONFIG_NET_SLIPTTY
-#    define CONFIG_NET_SLIPTTY "/dev/ttyS1"
+#    define CONFIG_NET_SLIPTTY "/dev/ttyS4"
 #  endif
 
 #  define SLIP_DEVNO 0
