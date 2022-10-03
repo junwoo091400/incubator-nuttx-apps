@@ -667,7 +667,7 @@ static void occasional(ClientData client_data, struct timeval *nowP)
  *   2) Call task_create() to start thttpd_main()
  *
  ****************************************************************************/
-
+#error "This is in the build"
 int thttpd_main(int argc, char **argv)
 {
   int num_ready;

@@ -38,6 +38,10 @@ include $(APPDIR)/Make.defs
 # Sub-directories that have been built or configured.
 
 SUBDIRS       := $(dir $(wildcard *$(DELIM)Makefile))
+
+$(info Directory.mk in!!!)
+$(info $$SUBDIRS is [${SUBDIRS}])
+
 CONFIGSUBDIRS := $(filter-out $(dir $(wildcard *$(DELIM)Kconfig)),$(SUBDIRS))
 CLEANSUBDIRS  += $(dir $(wildcard *$(DELIM).depend))
 CLEANSUBDIRS  += $(dir $(wildcard *$(DELIM).kconfig))

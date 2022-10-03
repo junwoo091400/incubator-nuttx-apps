@@ -22,9 +22,12 @@ include $(APPDIR)/Make.defs
 
 # THTTPD Library
 
+$(info Netutils > THTTPD Makefile in!!!)
+
 ifeq ($(CONFIG_NET_TCP),y)
   CSRCS += libhttpd.c thttpd_cgi.c thttpd_alloc.c thttpd_strings.c timers.c
   CSRCS += fdwatch.c tdate_parse.c thttpd.c
+  $(info Adding CONFIG_NET_TCP)
 endif
 
 # CGI binaries (examples only, not used in the build)

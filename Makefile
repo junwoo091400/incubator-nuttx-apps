@@ -18,6 +18,8 @@
 #
 ############################################################################
 
+$(info NuttX Apps Makefile in!!!)
+
 export APPDIR = $(CURDIR)
 include $(APPDIR)/Make.defs
 
